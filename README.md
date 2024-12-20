@@ -1,44 +1,72 @@
-# Title
-Image Downloader
-# Description
-The Project can be used to download Images from google.The script fetches images automatically based on parameters like number of images, type, and other customizations.
-# Preriquisites
-Python 3.x installed on your system.
+# Google Image Downloader
 
-Required Python packages (listed in requirements.txt):
+This project is a Python-based script to download images from Google automatically. It allows users to fetch images based on parameters like the number of images, type, and other customizations.
 
-requests
+---
 
-beautifulsoup4
+## Prerequisites
 
-Any other dependencies required in the script.
+To run this project, ensure you have the following installed:
+
+1. **Python 3.x**
+2. Required Python packages (listed in `requirements.txt`):
+   - `requests`
+   - `beautifulsoup4`
+   - Any other dependencies required by the script.
 
 Install dependencies with:
-
-bash
-
+```bash
 pip install -r requirements.txt
-# Setup
-Clone or download the repository:
+```
 
-bash
+---
 
-git clone https://github.com/yourusername/google-image-downloader.git
+## Setup
 
-cd google-image-downloader
+1. Clone or download the repository:
+   ```bash
+   git clone https://github.com/yourusername/google-image-downloader.git
+   cd google-image-downloader
+   ```
 
-Create a .env file with your environment variables, if required, for example, for proxy settings or Google API keys (if applicable).
-# Usage
-Run the script google_image.py:
+2. Create a `.env` file with your environment variables, if required. For example, add proxy settings or Google API keys (if applicable).
 
-bash
+---
 
-python google_image.py --query "your search term" --limit 50 Parameters:
+## Usage
 
---query: The search term or keywords for the image search (required).
+To download images, run the script `google_image.py` with the required parameters:
 
---limit: Number of images to download (default: 10). Example:
+```bash
+python google_image.py --query "your search term" --limit 50
+```
 
-bash
+### Parameters:
 
+- `--query`: The search term or keywords for the image search (**required**).
+- `--limit`: Number of images to download (**default**: 10).
+
+### Example:
+
+To download 20 images of puppies:
+```bash
 python google_image.py --query "puppies" --limit 20
+```
+
+---
+
+## Features
+
+- **Customizable Search**: Specify the search term and number of images.
+- **Automated Fetching**: Downloads images automatically based on user-defined parameters.
+- **Flexible Settings**: Supports proxy and API key configuration via `.env` file.
+
+---
+
+## File Structure
+
+- `google_image.py`: Main script to download images.
+- `README.md`: This file.
+
+---
+
